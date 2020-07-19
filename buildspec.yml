@@ -1,5 +1,8 @@
 version: 0.2
 phases:
+  install:
+    runtime-version: 
+      java: correto8
   build:
     commands:
       - echo Entered the build phase...
