@@ -1,8 +1,8 @@
 version: 0.2
+
 phases:
   install:
-    runtime-version: 
-      java: correto8
+    java: corretto8
   build:
     commands:
       - echo Entered the build phase...
@@ -13,9 +13,5 @@ phases:
       - echo Build completed successfully
 artifacts:
   files:
-    - target/car-rentals*/*
-  discard-paths: yes
-
-cache:
-  paths:
-    - '/root/.m2/**/*'
+    - target/java*/*
+  discard-paths: yes  
